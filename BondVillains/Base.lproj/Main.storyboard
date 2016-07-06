@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ok5-sU-3FC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ok5-sU-3FC">
                                 <rect key="frame" x="16" y="64" width="288" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -70,7 +70,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ok5-sU-3FC" firstAttribute="top" secondItem="e9O-g6-6sg" secondAttribute="bottom" id="CYc-hd-vNz"/>
+                            <constraint firstItem="ok5-sU-3FC" firstAttribute="top" secondItem="e9O-g6-6sg" secondAttribute="bottom" constant="-40" id="5Ff-4n-Ybw"/>
                             <constraint firstItem="ODX-bg-PWh" firstAttribute="top" secondItem="ok5-sU-3FC" secondAttribute="bottom" id="Ef3-UR-f07"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ok5-sU-3FC" secondAttribute="trailing" id="VHL-kY-7Jg"/>
                             <constraint firstItem="ok5-sU-3FC" firstAttribute="leading" secondItem="7I6-We-2KA" secondAttribute="leadingMargin" id="W2q-eT-hlx"/>
