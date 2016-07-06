@@ -27,9 +27,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Set the name and image
         cell.textLabel?.text = villain.name
         cell.imageView?.image = UIImage(named: villain.imageName)
-//        cell.layer.masksToBounds = true
-//        cell.layer.borderColor = UIColor.darkGrayColor().CGColor
-//        cell.layer.borderWidth = 1.0
 
         // If the cell has a detail label, we will put the evil scheme in.
         if let detailTextLabel = cell.detailTextLabel {
