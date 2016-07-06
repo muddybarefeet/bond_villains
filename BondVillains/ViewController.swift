@@ -14,7 +14,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // This is an array of Villain instances
     let allVillains = Villain.allVillains
 
+    @IBOutlet weak var tableView: UITableView!
     // MARK: Table View Data Source
+    
+    override func viewDidLoad () {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.allVillains.count
@@ -38,6 +44,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("triggered")
+        let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("VillainDetailViewController") as! VillainDetailViewController
+        detailController.villain = self.allVillains[indexPath.row]
+        self.navigationController!.pushViewController(detailController, animated: true)
+        
     }
 
 }
